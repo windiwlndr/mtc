@@ -84,7 +84,7 @@
                                                         <option value=""></option>
                                                         <option value="1">Manager</option>
                                                         <option value="2">Admin</option>
-                                                        <option value="3">User</option>
+                                                        <option value="3">Kasir</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -107,7 +107,7 @@
                     <div class="d-flex mb-3">
                         <form method="GET" action="<?= base_url('/admin'); ?>" class="d-flex w-100">
                             <select class="form-select me-2" name="perPage" onchange="this.form.submit()">
-                            <option value="2" <?= ($perPage == 2) ? 'selected' : ''; ?>>2</option>
+                                <option value="2" <?= ($perPage == 2) ? 'selected' : ''; ?>>2</option>
                                 <option value="5" <?= ($perPage == 5) ? 'selected' : ''; ?>>5</option>
                                 <option value="10" <?= ($perPage == 10) ? 'selected' : ''; ?>>10</option>
                                 <option value="25" <?= ($perPage == 25) ? 'selected' : ''; ?>>25</option>
@@ -139,7 +139,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                $no = 1 + ($perPage * ($pager->getCurrentPage() - 1)); 
+                                $no = 1 + ($perPage * ($pager->getCurrentPage() - 1));
                                 foreach ($admin as $user) :
                                 ?>
                                     <tr>
