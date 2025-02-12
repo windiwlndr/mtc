@@ -9,7 +9,7 @@
                     Madura Technovation
                 </li>
                 <li class="sidebar-item">
-                    <a href="index.html" class="sidebar-link">
+                    <a href=" <?= base_url('/'); ?> " class="sidebar-link">
                         <i class="fa-solid fa-house"></i>
                         <span>Home</span>
                     </a>
